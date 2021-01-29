@@ -32,25 +32,25 @@
 					
 						<div class="form-row">
 							<div class="form-group col-md-6">
-								<label>Codice <span class="text-danger">*</span></label>
-								<input type="text" name="codice" id="codice" class="form-control" placeholder="Inserire il codice" required>
+								<label>Matricola <span class="text-danger">*</span></label>
+								<input type="text" name="matricola" id="matricola" class="form-control" placeholder="Inserire la matricola" required>
 							</div>
 							
 							<div class="form-group col-md-6">
-								<label>Descrizione <span class="text-danger">*</span></label>
-								<input type="text" name="descrizione" id="descrizione" class="form-control" placeholder="Inserire la descrizione" required>
+								<label>Nome <span class="text-danger">*</span></label>
+								<input type="text" name="nome" id="nome" class="form-control" placeholder="Inserire il nome" required>
 							</div>
 						</div>
 						
 						<div class="form-row">	
 							<div class="form-group col-md-6">
-								<label>Prezzo <span class="text-danger">*</span></label>
-								<input type="number" class="form-control" name="prezzo" id="prezzo" placeholder="Inserire prezzo" required>
+								<label>Cognome <span class="text-danger">*</span></label>
+								<input type="text" class="form-control" name="cognome" id="cognome" placeholder="Inserire il cognome" required>
 							</div>
 							<div class="form-group col-md-3">
-								<label>Data di Arrivo<span class="text-danger">*</span></label>
-                        		<input class="form-control" id="dataArrivo" type="date" placeholder="dd/MM/yy"
-                            		title="formato : gg/mm/aaaa"  name="dataArrivo" required>
+								<label>Data di Nascita<span class="text-danger">*</span></label>
+                        		<input class="form-control" id="dataNascita" type="date" placeholder="dd/MM/yy"
+                            		title="formato : gg/mm/aaaa"  name="dataNascita" required>
 							</div>
 							
 						</div>

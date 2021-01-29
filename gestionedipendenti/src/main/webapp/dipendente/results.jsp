@@ -46,31 +46,31 @@
 		        <h5>Lista dei risultati</h5> 
 		    </div>
 		    <div class='card-body'>
-		    	<a class="btn btn-primary " href="PrepareInsertArticoloServlet">Add New</a>
+		    	<a class="btn btn-primary " href="PrepareInsertDipendenteServlet">Aggiungi nuovo</a>
 		    
 		        <div class='table-responsive'>
 		            <table class='table table-striped ' >
 		                <thead>
 		                    <tr>
 		                        <th>Id</th>
-		                        <th>Codice</th>
-		                        <th>Descrizione</th>
-		                        <th>Prezzo</th>
-		                        <th>Data di Arrivo</th>
+		                        <th>Matricola</th>
+		                        <th>Nome</th>
+		                        <th>Cognome</th>
+		                        <th>Data di Nascita</th>
 		                        <th>Azioni</th>
 		                    </tr>
 		                </thead>
 		                <tbody>
-		                	<% List<Articolo> listaArticoli = (List<Articolo>)request.getAttribute("listaArticoliAttribute");
-		                		for(Articolo item:listaArticoli){ %>
+		                	<% List<Dipendente> listaDipendenti = (List<Dipendente>)request.getAttribute("listaDipendentiAttribute");
+		                		for(Dipendente item:listaDipendenti){ %>
 		                    <tr >
 		                        <td><%=item.getId() %></td>
-		                        <td><%=item.getCodice() %></td>
-		                        <td><%=item.getDescrizione() %></td>
-		                        <td><%=item.getPrezzo() %></td>
-		                        <td><%=item.getDataArrivo()!=null? new SimpleDateFormat("dd/MM/yyyy").format(item.getDataArrivo()):"N.D."%></td>
+		                        <td><%=item.getMatricola() %></td>
+		                        <td><%=item.getNome() %></td>
+		                        <td><%=item.getCognome() %></td>
+		                        <td><%=item.getDataNascita()!=null? new SimpleDateFormat("dd/MM/yyyy").format(item.getDataNascita()):"N.D."%></td>
 		                        <td>
-									<a class="btn  btn-sm btn-outline-secondary" href="ExecuteVisualizzaArticoloServlet?idArticolo=<%=item.getId() %>">Visualizza</a>
+									<a class="btn  btn-sm btn-outline-secondary" href="ExecuteVisualizzaDipendenteServlet?idDipendente=<%=item.getId() %>">Visualizza</a>
 									<a class="btn  btn-sm btn-outline-primary ml-2 mr-2" href="laservletpermodificare">Edit</a>
 									<a class="btn btn-outline-danger btn-sm" href="laservletperrimuovere">Delete</a>
 								</td>

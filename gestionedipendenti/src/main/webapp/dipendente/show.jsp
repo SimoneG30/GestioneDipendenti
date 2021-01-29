@@ -19,27 +19,27 @@
 		    <div class='card-header'>
 		        Visualizza dettaglio
 		    </div>
-		    <% Articolo articoloInPagina = (Articolo)request.getAttribute("visualizza_articolo_attr"); %>
+		    <% Dipendente dipendenteInPagina = (Dipendente)request.getAttribute("visualizza_dipendente_attr"); %>
 		
 		    <div class='card-body'>
 		    	<dl class="row">
 				  <dt class="col-sm-3 text-right">Codice</dt>
-				  <dd class="col-sm-9"><%=articoloInPagina.getCodice() %></dd>
+				  <dd class="col-sm-9"><%=dipendenteInPagina.getMatricola() %></dd>
 		    	</dl>
 		    	
 		    	<dl class="row">
 				  <dt class="col-sm-3 text-right">Descrizione:</dt>
-				  <dd class="col-sm-9"><%=articoloInPagina.getDescrizione() %></dd>
+				  <dd class="col-sm-9"><%=dipendenteInPagina.getNome() %></dd>
 		    	</dl>
 		    	
 		    	<dl class="row">
 				  <dt class="col-sm-3 text-right">Prezzo:</dt>
-				  <dd class="col-sm-9"><%=articoloInPagina.getPrezzo() %></dd>
+				  <dd class="col-sm-9"><%=dipendenteInPagina.getCognome() %></dd>
 		    	</dl>
 		    	
 		    	<dl class="row">
 				  <dt class="col-sm-3 text-right">Data di Arrivo:</dt>
-				  <dd class="col-sm-9"><%=articoloInPagina.getDataArrivo()!=null? new SimpleDateFormat("dd/MM/yyyy").format(articoloInPagina.getDataArrivo()):"N.D."  %></dd>
+				  <dd class="col-sm-9"><%=dipendenteInPagina.getDataNascita()!=null? new SimpleDateFormat("dd/MM/yyyy").format(dipendenteInPagina.getDataNascita()):"N.D."  %></dd>
 		    	</dl>
 		    	
 		    </div>
