@@ -31,7 +31,7 @@ public class ExecuteInsertDipendenteServlet extends HttpServlet {
 		String matricolaInputParam = request.getParameter("matricola");
 		String nomeInputParam = request.getParameter("nome");
 		String cognomeInputStringParam = request.getParameter("cognome");
-		String dataNascitaStringParam = request.getParameter("datanascita");
+		String dataNascitaStringParam = request.getParameter("dataNascita");
 
 		Date dataNascitaParsed = parseDateNascitaFromString(dataNascitaStringParam);
 

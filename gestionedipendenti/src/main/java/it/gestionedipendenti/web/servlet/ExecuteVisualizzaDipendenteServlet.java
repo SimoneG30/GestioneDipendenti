@@ -18,9 +18,9 @@ public class ExecuteVisualizzaDipendenteServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String idArticoloParam = request.getParameter("idArticolo");
+		String idDipendenteParam = request.getParameter("idDipendente");
 
-		if (!NumberUtils.isCreatable(idArticoloParam)) {
+		if (!NumberUtils.isCreatable(idDipendenteParam)) {
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore.");
 			request.getRequestDispatcher("/index.jsp").forward(request, response);
 			return;
@@ -28,7 +28,7 @@ public class ExecuteVisualizzaDipendenteServlet extends HttpServlet {
 
 		try {
 			request.setAttribute("visualizza_dipendente_attr", MyServiceFactory.getDipendenteServiceInstance()
-					.caricaSingoloElemento(Long.parseLong(idArticoloParam)));
+					.caricaSingoloElemento(Long.parseLong(idDipendenteParam)));
 		} catch (Exception e) {
 			e.printStackTrace();
 			request.setAttribute("errorMessage", "Attenzione si è verificato un errore.");
