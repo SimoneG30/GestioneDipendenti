@@ -1,5 +1,7 @@
 package it.gestionedipendenti.dao;
 
-public interface DipendenteDAO {
+import it.gestionedipendenti.model.Dipendente;
+
+public interface DipendenteDAO extends IBaseDAO<Dipendente> {
 
 }

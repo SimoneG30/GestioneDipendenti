@@ -23,8 +23,6 @@ public class Dipendente {
 	private String nome;
 	@Column(name = "cognome")
 	private String cognome;
-	@Column(name = "cellulare")
-	private Integer cellulare;
 	@Column(name = "datanascita")
 	private Date dataNascita;
 	
@@ -32,12 +30,11 @@ public class Dipendente {
 		
 	}
 
-	public Dipendente(String matricola, String nome, String cognome, Integer cellulare, Date dataNascita) {
+	public Dipendente(String matricola, String nome, String cognome, Date dataNascita) {
 		super();
 		this.matricola = matricola;
 		this.nome = nome;
 		this.cognome = cognome;
-		this.cellulare = cellulare;
 		this.dataNascita = dataNascita;
 	}
 
@@ -71,14 +68,6 @@ public class Dipendente {
 
 	public void setCognome(String cognome) {
 		this.cognome = cognome;
-	}
-
-	public Integer getCellulare() {
-		return cellulare;
-	}
-
-	public void setCellulare(Integer cellulare) {
-		this.cellulare = cellulare;
 	}
 
 	public Date getDataNascita() {
