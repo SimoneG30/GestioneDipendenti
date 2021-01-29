@@ -20,8 +20,8 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="index.jsp">Home</a>
-          <a class="dropdown-item" href="ListArticoliServlet">Risultati</a>
-          <a class="dropdown-item" href="PrepareInsertArticoloServlet">Inserisci nuovo elemento</a>
+          <a class="dropdown-item" href="ListDipendentiServlet">Risultati</a>
+          <a class="dropdown-item" href="PrepareInsertDipendenteServlet">Inserisci nuovo elemento</a>
         </div>
       </li>
     </ul>

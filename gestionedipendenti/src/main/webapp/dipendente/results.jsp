@@ -10,20 +10,16 @@
 	
 	<!-- style per le pagine diverse dalla index -->
     <link href="./assets/css/global.css" rel="stylesheet">
-    
 </head>
 <body>
 	<jsp:include page="../navbar.jsp" />
-	
 	<main role="main" class="container">
-	
 		<div class="alert alert-success alert-dismissible fade show ${successMessage==null?'d-none': ''}" role="alert">
 		  ${successMessage}
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 		    <span aria-hidden="true">&times;</span>
 		  </button>
 		</div>
-		
 		<!---------------------------------->
 		<!-- ESEMPI DI ALERT DI BOOTSTRAP -->
 		<div class="alert alert-danger alert-dismissible fade show d-none" role="alert">
@@ -40,14 +36,12 @@
 		</div>
 		<!--------   end  ------------------>
 		<!---------------------------------->
-		
 		<div class='card'>
 		    <div class='card-header'>
 		        <h5>Lista dei risultati</h5> 
 		    </div>
 		    <div class='card-body'>
 		    	<a class="btn btn-primary " href="PrepareInsertDipendenteServlet">Aggiungi nuovo</a>
-		    
 		        <div class='table-responsive'>
 		            <table class='table table-striped ' >
 		                <thead>
@@ -79,16 +73,11 @@
 		                </tbody>
 		            </table>
 		        </div>
-		   
 			<!-- end card-body -->			   
 		    </div>
-		</div>	
-	
-	
-	
+		</div>
 	<!-- end container -->	
 	</main>
 	<jsp:include page="../footer.jsp" />
-	
 </body>
 </html>

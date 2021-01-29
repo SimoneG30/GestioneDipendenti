@@ -26,9 +26,9 @@
 	  <!-- Main jumbotron for a primary marketing message or call to action -->
 	  <div class="jumbotron" >
 	    <div class="container">
-	      <h1 class="display-3">Benvenuto alla Gestione degli Articoli!</h1>
+	      <h1 class="display-3">Benvenuto alla Gestione dei Dipendenti</h1>
 	      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-	      <p><a class="btn btn-primary btn-lg" href="ListArticoliServlet" role="button">Vai alla Lista di Articoli &raquo;</a></p>
+	      <p><a class="btn btn-primary btn-lg" href="ListDipendentiServlet" role="button">Vai alla Lista dei Dipendenti &raquo;</a></p>
 	    </div>
 	  </div>
 	  
