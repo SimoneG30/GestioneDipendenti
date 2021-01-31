@@ -42,6 +42,8 @@
 		    </div>
 		    <div class='card-body'>
 		    	<a class="btn btn-primary " href="PrepareInsertDipendenteServlet">Aggiungi nuovo</a>
+		    			    	<a style="float:right" class="btn btn-warning" href="PrepareSearchDipendenteServlet">Cerca</a>
+		    	
 		        <div class='table-responsive'>
 		            <table class='table table-striped ' >
 		                <thead>
@@ -65,8 +67,8 @@
 		                        <td><%=item.getDataNascita()!=null? new SimpleDateFormat("dd/MM/yyyy").format(item.getDataNascita()):"N.D."%></td>
 		                        <td>
 									<a class="btn  btn-sm btn-outline-secondary" href="ExecuteVisualizzaDipendenteServlet?idDipendente=<%=item.getId() %>">Visualizza</a>
-									<a class="btn  btn-sm btn-outline-primary ml-2 mr-2" href="laservletpermodificare">Edit</a>
-									<a class="btn btn-outline-danger btn-sm" href="laservletperrimuovere">Delete</a>
+									<a class="btn  btn-sm btn-outline-primary ml-2 mr-2" href="PrepareUpdateDipendenteServlet?idDipendente=<%=item.getId() %>"> Edit </a>
+									<a class="btn btn-outline-danger btn-sm" href="PrepareDeleteDipendenteServlet?idDipendente=<%=item.getId() %>">Delete</a>
 								</td>
 		                    </tr>
 		                    <% } %>

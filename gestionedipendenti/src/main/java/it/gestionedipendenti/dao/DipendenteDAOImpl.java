@@ -53,18 +53,18 @@ public class DipendenteDAOImpl implements DipendenteDAO{
 	@Override
 	public List<Dipendente> findByExample(Dipendente input) throws Exception {
 
-        StringBuilder stringBuilder = new StringBuilder("");
-        stringBuilder.append("select d from Dipendente d where");
-        stringBuilder.append("( :matricola is null OR d.matricola like %:matricola%) ");
-        stringBuilder.append("AND (:nome is null OR d.nome like %:nome%) ");
-        stringBuilder.append("AND (:cognome is null OR d.cognome like %:cognome%) ");
-        stringBuilder.append("AND (:datanascita is null OR d.datanascita = :datanascita) ");
-        TypedQuery<Dipendente> typedQuery = entityManager.createQuery(stringBuilder.toString(), Dipendente.class);
-        typedQuery.setParameter("matricola", input.getMatricola());
-        typedQuery.setParameter("nome", input.getNome());
-        typedQuery.setParameter("cognome", input.getCognome());
-        typedQuery.setParameter("datanascita", input.getDataNascita());
-        return typedQuery.getResultList();
+		   StringBuilder stringBuilder = new StringBuilder("");
+	        stringBuilder.append("select d from Dipendente d where");
+	        stringBuilder.append("( :matricola is null OR d.matricola like ('%' || :matricola || '%'))");
+	        stringBuilder.append("AND (:nome is null OR d.nome like ('%' || :nome || '%'))");
+	        stringBuilder.append("AND (:cognome is null OR d.cognome like ('%' || :cognome || '%'))");
+	        stringBuilder.append("AND (:dataNascita is null OR d.dataNascita = :dataNascita) ");
+	        TypedQuery<Dipendente> typedQuery = entityManager.createQuery(stringBuilder.toString(), Dipendente.class);
+	        typedQuery.setParameter("matricola", input.getMatricola());
+	        typedQuery.setParameter("nome", input.getNome());
+	        typedQuery.setParameter("cognome", input.getCognome());
+	        typedQuery.setParameter("dataNascita", input.getDataNascita());
+	        return typedQuery.getResultList();
 	}
 
 }

@@ -18,17 +18,16 @@
   
 	<jsp:include page="./navbar.jsp"></jsp:include>
   
-  
 	<main role="main">
-	
-		
-
 	  <!-- Main jumbotron for a primary marketing message or call to action -->
 	  <div class="jumbotron" >
 	    <div class="container">
-	      <h1 class="display-3">Benvenuto alla Gestione dei Dipendenti</h1>
-	      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-	      <p><a class="btn btn-primary btn-lg" href="ListDipendentiServlet" role="button">Vai alla Lista dei Dipendenti &raquo;</a></p>
+	      <h1 style="text-align: center;" class="display-3">Benvenuto!</h1>
+	      <h3 style="text-align: center;">Qui potrai gestire i dipendenti della tua azienda</h3>
+	      <div class="text-center">
+	      <br>
+	      <p><a class="btn btn-primary btn-lg" style="float: center;" href="ListDipendentiServlet" role="button">Lista dei Dipendenti</a></p>
+	      </div>
 	    </div>
 	  </div>
 	  
@@ -40,32 +39,7 @@
 		    <span aria-hidden="true">&times;</span>
 		  </button>
 		</div>
-	  
-	    <!-- Example row of columns -->
-	    <div class="row">
-	      <div class="col-md-4">
-	        <h2>Heading</h2>
-	        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div>
-	      <div class="col-md-4">
-	        <h2>Heading</h2>
-	        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div>
-	      <div class="col-md-4">
-	        <h2>Heading</h2>
-	        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-	      </div>
-	    </div>
-	
-	    <hr>
-	
-	  </div> <!-- /container -->
-	
 	</main>
-	
 	<jsp:include page="./footer.jsp" />
   </body>
 </html>
